@@ -1,7 +1,7 @@
 ﻿[DscLocalConfigurationManager()]
 Configuration LCMSimple
 {
-    Node localhost
+    Node SRV2
     {
         Settings
         {
@@ -10,6 +10,7 @@ Configuration LCMSimple
             ConfigurationMode = 'ApplyAndAutoCorrect'        
             ActionAfterReboot = 'ContinueConfiguration'
             AllowModuleOverwrite = $true
+            
         }
 
         ConfigurationRepositoryWeb Pull
